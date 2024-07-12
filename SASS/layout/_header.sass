@@ -1,0 +1,28 @@
+.header
+    position: relative
+    height: 95vh
+    background: linear-gradient(90.00deg, rgba(84, 176, 186, 0.7) 0.03%, rgba(1, 1, 1, 0.7) 99.94%), url(../src/img/boeing-737-header.jpg) center / cover no-repeat
+    @media (min-resolution: 192dpi) and (min-width: 670px), (min-width: 1340px)
+        background: linear-gradient(90deg, rgba($color-black, 0.7) 0.03%, rgba($color-white, 0.7) 99.94%), url(../src/img/boeing-737-header.jpg) center / cover no-repeat
+    clip-path: polygon(0 0, 100% 1%, 100% 100%, 0 83%)
+    
+    
+    
+    
+    
+    &__logo
+        // position: absolute
+        left: 5rem
+        top: 5rem
+        height: 12rem
+        width: 12rem
+
+    &__box
+        position: absolute
+        top: 30%
+        left: 50%
+        transform: translate(-50%)
+        width: 100%
+        text-align: center
+        @media only screen and (max-width: 376px)
+            top: 20%

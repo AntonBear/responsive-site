@@ -1,0 +1,36 @@
+body
+    font-family: 'Roboto', sans-serif
+    font-weight: 400
+    color: $color-gray
+    font-size: $font-size-paragraph
+    letter-spacing: .2rem
+    background-color: $color-white
+    padding: 5rem
+    @media only screen and (max-width: 375px) 
+        padding: 0rem
+   
+    
+.section-about
+    padding-top: 8rem
+    margin-bottom: 20rem
+    @include respond(tab-land)
+        margin-bottom: 13rem
+    @include respond(tab-port)
+        margin-bottom: 40rem
+
+.section-adventure
+    padding: 21rem 0
+    background: linear-gradient(90.00deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(1, 1, 1, 0.7) 99.94%), url(../src/img/boeing-photo-adventure.jpg) center / cover no-repeat
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 75% 100%, 75% 100%, 0 100%)
+    transform: skewY(7deg)
+    & > *
+        transform: skewY(-7deg)
+    @include respond(tab-land)
+        padding: 15rem 0
+
+
+.section-tour
+    padding-top: 21rem
+    margin-bottom: 8rem
+
+
